@@ -1,0 +1,259 @@
+body {
+  font-size: 22px;
+  display: block;
+}
+
+body,
+html {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    border-right-color: orange;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+/* Navigation Bar */
+
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.header-container {
+  display: block;
+  position: sticky;
+  background-color: #2e424d;
+  top: 0;
+  height: 60px;
+  z-index: 100;
+  border-bottom: 10px groove #eaebed;
+}
+
+.website-title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #eaebed;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #eaebed;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Main Section*/
+
+main {
+  display: block;
+}
+
+#home {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #5b8291;
+  height: 650px;
+  border-bottom: 10px groove #eaebed;
+}
+
+#img-page {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-right: 120px;
+  margin-left: 120px;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 373px;
+  height: 561px;
+  border: 5px groove #eaebed;
+  border-radius: 47%;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: -300px;
+  position: absolute;
+}
+
+/*.greeting-page {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+} */
+
+.greeting-page {
+  color: aliceblue;
+  font-family: "Outfit", sans-serif;
+  font-weight: normal;
+}
+
+span.hi-text {
+  font-size: 70px;
+  color: rgb(255, 251, 0);
+}
+
+span.name-text {
+  color: #eaebed;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+h2.job-title {
+  background-color: #5b8291;
+  font-size: 55px;
+  overflow: hidden;
+  width: fit-content;
+  border-right: 0.15em solid orange;
+  animation: typing 5s steps(30, end), blink-caret 0.5s step-end infinite;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #5b8291;
+  font-family: "Outfit", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+#projects {
+  display: block;
+  padding-top: 45px;
+  margin: 0;
+  padding: 0;
+  scroll-margin-top: 30px;
+  background-color: #5b8291;
+}
+
+.container2 {
+  height: fit-content;
+  max-width: 1300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-card {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.grid-item {
+  display: grid;
+  place-items: center;
+  height: 420px;
+}
+
+.card img {
+  width: 320px;
+  height: 420px;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #eaebed;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  transform: translateY(80%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover h3 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+section#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 0;
+  background-color: #5b8291;
+  border-bottom: 10px groove #eaebed;
+}
+/*FOOTER*/
+footer {
+  background-color: #2e424d;
+  color: #eaebed;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+}
