@@ -103,6 +103,7 @@ main {
   margin-right: 120px;
   margin-left: 120px;
   align-items: center;
+  gap: 255px;
 }
 
 .profile-pic {
@@ -177,6 +178,10 @@ h2 {
   padding: 0;
   scroll-margin-top: 30px;
   background-color: #5b8291;
+}
+
+.container1 {
+  margin: 0 auto;
 }
 
 .container2 {
