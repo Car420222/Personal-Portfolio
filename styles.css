@@ -182,6 +182,7 @@ h2 {
 
 .container1 {
   margin: 0 auto;
+  width: fit-content;
 }
 
 .container2 {
@@ -202,6 +203,10 @@ h2 {
   display: grid;
   place-items: center;
   height: 420px;
+}
+
+.card {
+  height: inherit;
 }
 
 .card img {
