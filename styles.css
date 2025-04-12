@@ -1,3 +1,11 @@
+:root {
+  --primary-dark: #2c3e50;
+  --primary: #34495e;
+  --accent: #3498db;
+  --light: #ecf0f1;
+  --highlight: #e74c3c;
+}
+
 body {
   font-size: 22px;
   display: block;
@@ -46,19 +54,17 @@ html {
 
 .header-container {
   display: block;
-  position: sticky;
-  background-color: #2e424d;
   top: 0;
-  height: 60px;
   z-index: 100;
-  border-bottom: 10px groove #eaebed;
+  background-color: var(--primary-dark);
+  border-bottom: 10px groove var(--light);
 }
 
 .website-title {
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #eaebed;
+  color: var(--light);
   position: relative;
 }
 
@@ -77,7 +83,7 @@ nav ul {
 
 .nav-links a {
   text-decoration: none;
-  color: #eaebed;
+  color: var(--light);
   font-family: "Outfit", sans-serif;
 }
 
@@ -91,9 +97,9 @@ main {
   position: relative;
   padding-top: 45px;
   padding-bottom: 45px;
-  background-color: #5b8291;
   height: 650px;
-  border-bottom: 10px groove #eaebed;
+  background-color: var(--primary);
+  border-bottom: 10px groove var(--light);
 }
 
 #img-page {
@@ -109,7 +115,7 @@ main {
 .profile-pic {
   width: 373px;
   height: 561px;
-  border: 5px groove #eaebed;
+  border: 5px groove var(--light);
   border-radius: 47%;
   overflow: hidden;
   position: relative;
@@ -133,42 +139,42 @@ img {
 } */
 
 .greeting-page {
-  color: aliceblue;
+  color: var(--light);
   font-family: "Outfit", sans-serif;
   font-weight: normal;
 }
 
 span.hi-text {
   font-size: 70px;
-  color: rgb(255, 251, 0);
+  color: var(--highlight);
 }
 
 span.name-text {
-  color: #eaebed;
+  color: var(--light);
   font-weight: 700;
   font-size: 55px;
 }
 
 h2.job-title {
-  background-color: #5b8291;
   font-size: 55px;
   overflow: hidden;
   width: fit-content;
-  border-right: 0.15em solid orange;
   animation: typing 5s steps(30, end), blink-caret 0.5s step-end infinite;
   white-space: nowrap;
   margin: 0 auto;
+  background-color: var(--primary);
+  border-right: 0.15em solid var(--highlight);
 }
 
 h2 {
   width: 100%;
   text-align: center;
   padding: 20px 0;
-  background-color: #5b8291;
   font-family: "Outfit", sans-serif;
   font-size: 60px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  background-color: var(--primary);
+  color: var(--light);
 }
 
 #projects {
@@ -177,7 +183,7 @@ h2 {
   margin: 0;
   padding: 0;
   scroll-margin-top: 30px;
-  background-color: #5b8291;
+  background-color: var(--primary);
 }
 
 .container1 {
@@ -207,6 +213,14 @@ h2 {
 
 .card {
   height: inherit;
+  position: relative;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
 }
 
 .card img {
@@ -214,7 +228,7 @@ h2 {
   height: 420px;
   position: relative;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
@@ -230,22 +244,22 @@ h2 {
 h3 {
   display: block;
   font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
-  color: #eaebed;
   font-family: "Outfit", sans-serif;
   text-align: center;
-  transform: translateY(80%);
+  transform: translateY(100%);
   opacity: 0;
   transition: 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--light);
+  background-color: var(--primary-dark);
 }
 
 .card:hover h3 {
   transform: translateY(0);
   opacity: 1;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 section#contact {
@@ -254,13 +268,13 @@ section#contact {
   align-items: center;
   justify-content: center;
   padding: 45px 0;
-  background-color: #5b8291;
-  border-bottom: 10px groove #eaebed;
+  background-color: var(--primary);
+  border-bottom: 10px groove var(--light);
 }
 /*FOOTER*/
 footer {
-  background-color: #2e424d;
-  color: #eaebed;
+  background-color: var(--primary-dark);
+  color: var(--light);
   text-align: center;
   padding: 15px 0;
   font-family: "Outfit", sans-serif;

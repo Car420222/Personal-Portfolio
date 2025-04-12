@@ -1,0 +1,168 @@
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .container1,
+  .container2 {
+    max-width: 1000px;
+  }
+
+  #img-page {
+    gap: 100px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .profile-pic {
+    width: 350px;
+    height: 525px;
+  }
+
+  span.hi-text {
+    font-size: 60px;
+  }
+
+  span.name-text,
+  h2.job-title {
+    font-size: 45px;
+  }
+
+  .project-card {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .card img {
+    width: 280px;
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container1,
+  .container2 {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+
+  .nav-container {
+    height: auto;
+    padding: 15px;
+  }
+
+  #home {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  #img-page {
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 30px;
+  }
+
+  .profile-pic {
+    width: 300px;
+    height: 450px;
+  }
+
+  .greeting-page {
+    text-align: center;
+  }
+
+  span.hi-text {
+    font-size: 55px;
+  }
+
+  span.name-text,
+  h2.job-title {
+    font-size: 40px;
+  }
+
+  .project-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .grid-items {
+    height: 300px;
+  }
+
+  .card img {
+    width: 250px;
+    height: 380px;
+  }
+}
+
+.project-card {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  .nav-container {
+    height: auto;
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .website-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #home {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  #img-page {
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 20px;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 375px;
+  }
+
+  .greeting-page {
+    text-align: center;
+  }
+
+  span.hi-text {
+    font-size: 40px;
+  }
+
+  span.name-text,
+  h2.job-title {
+    font-size: 32px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 280px;
+    height: 380px;
+  }
+
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+}
